@@ -5,6 +5,8 @@ const OrdersSchema = (sequelize, DataTypes) => {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
       },
       orderNfId: {
         allowNull: false,
@@ -78,13 +80,23 @@ const OrdersSchema = (sequelize, DataTypes) => {
       },
       buyerId: {
         allowNull: true,
-        defaultValue: null,
         type: DataTypes.INTEGER,
+        defaultValue: null,
+        foreignKey: true,
+        references: {
+          model: "buyers",
+          key: "id",
+        },
       },
       providerId: {
         allowNull: true,
         defaultValue: null,
         type: DataTypes.INTEGER,
+        foreignKey: true,
+        references: {
+          model: "providers",
+          key: "id",
+        },
       },
       orderStatusBuyer: {
         defaultValue: "0",
@@ -112,10 +124,22 @@ const OrdersSchema = (sequelize, DataTypes) => {
     },
     {
       tableName: "orders",
-      underscored: true,
+      // underscored: true,
       timestamps: false,
     }
   );
+
+  OrdersTable.associate = (models) => {
+    OrdersTable.belongsTo(models.buyers, {
+      as: "buyers",
+      foreignKey: "buyerId",
+    });
+    OrdersTable.belongsTo(models.providers, {
+      as: "providers",
+      foreignKey: "providerId",
+    });
+  };
+
   return OrdersTable;
 };
 

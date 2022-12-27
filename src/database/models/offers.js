@@ -5,6 +5,8 @@ const OffersSchema = (sequelize, DataTypes) => {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
       },
       tax: {
         allowNull: false,
@@ -57,7 +59,7 @@ const OffersSchema = (sequelize, DataTypes) => {
     },
     {
       tableName: "offers",
-      underscored: true,
+      // underscored: true,
       timestamps: false,
     }
   );

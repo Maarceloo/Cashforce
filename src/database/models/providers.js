@@ -5,6 +5,8 @@ const ProvidersSchema = (sequelize, DataTypes) => {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
       },
       name: {
         allowNull: false,
@@ -141,10 +143,16 @@ const ProvidersSchema = (sequelize, DataTypes) => {
     },
     {
       tableName: "providers",
-      underscored: true,
+      // underscored: true,
       timestamps: false,
     }
   );
+  ProvidersTable.associate = (models) => {
+    ProvidersTable.hasMany(models.orders, {
+      as: "providers",
+      foreignKey: "providerId",
+    });
+  };
   return ProvidersTable;
 };
 

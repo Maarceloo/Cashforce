@@ -5,6 +5,8 @@ const SponsorsSchema = (sequelize, DataTypes) => {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
       },
       name: {
         allowNull: false,
@@ -136,7 +138,7 @@ const SponsorsSchema = (sequelize, DataTypes) => {
     },
     {
       tableName: "sponsors",
-      underscored: true,
+      // underscored: true,
       timestamps: false,
     }
   );

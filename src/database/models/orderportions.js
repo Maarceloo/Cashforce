@@ -5,6 +5,8 @@ const OrderportionsSchema = (sequelize, DataTypes) => {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
       },
       nDup: {
         allowNull: false,
@@ -37,7 +39,7 @@ const OrderportionsSchema = (sequelize, DataTypes) => {
     },
     {
       tableName: "orderportions",
-      underscored: true,
+      // underscored: true,
       timestamps: false,
     }
   );

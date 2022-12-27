@@ -5,6 +5,8 @@ const CnpjsSchema = (sequelize, DataTypes) => {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
       },
       cnpj: {
         allowNull: false,
@@ -25,7 +27,7 @@ const CnpjsSchema = (sequelize, DataTypes) => {
     },
     {
       tableName: "cnpjs",
-      underscored: true,
+      // underscored: true,
       timestamps: false,
     }
   );
