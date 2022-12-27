@@ -30,8 +30,7 @@ module.exports = {
           confirm: 1,
           email: null,
         },
-      ],
-      {}
+      ]
     );
   },
   down: async (queryInterface) => {
