@@ -74,9 +74,11 @@ module.exports = {
         type: Sequelize.INTEGER(11),
       },
       orderStatusBuyer: {
+        allowNull: true,
         type: Sequelize.STRING(255),
       },
       orderStatusProvider: {
+        allowNull: true,
         type: Sequelize.STRING(255),
       },
       deliveryReceipt: {
