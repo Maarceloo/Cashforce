@@ -1,4 +1,4 @@
-const { orders, providers, buyers } = require("../../database/models");
+const { orders, providers, buyers } = require("../../src/database/models");
 
 const getAllInvoices = async () => {
   const data = await orders.findAll({
