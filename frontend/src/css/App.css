@@ -1,0 +1,11 @@
+.App {
+  position: absolute;
+  width: 1560px;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+
+  /* N. Light / 4 */
+
+  background: #fbfdfe;
+}
