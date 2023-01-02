@@ -1,31 +1,7 @@
-.pageDefaut {
-  position: absolute;
-  width: 1560px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
-
-  /* N. Light / 4 */
-
-  background: #fbfdfe;
-}
-
-header {
-  position: absolute;
-  width: 1272px;
-  height: 64px;
-  left: 288px;
-  top: 0px;
-}
-
 .headerSistema {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
-  border-radius: 0px;
+  height: 64px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dfe2eb;
 }
 
 .conteudo {
@@ -36,10 +12,164 @@ header {
   bottom: 0px;
 
   /* P. White / 1
-
-Primary palette
-*/
+  
+  Primary palette
+  */
   background: #ffffff;
   box-shadow: 0px 10px 30px rgba(225, 229, 236, 0.5);
   border-radius: 15px 0px 0px 15px;
+}
+
+.siderbar-financiador {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  background-color: #fbfdfe;
+}
+
+.siderbar-fornecedor {
+  margin: 0;
+  color: #00ad8c;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+img {
+  max-width: 288px;
+  max-height: 80px;
+}
+
+.introducaoConteudo {
+  max-width: 255px;
+  max-height: 53px;
+  color: #021b51;
+  padding: 40px 0px 0px 43px;
+}
+
+/* .introducaoConteudo p {
+  background-color: black;
+} */
+
+.hand {
+  display: flex;
+  flex-direction: row;
+  max-width: 182px;
+  max-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  flex-wrap: nowrap;
+}
+
+.table {
+  position: absolute;
+  width: 1177px;
+  height: 214px;
+  margin-left: 1%;
+  margin-top: 3%;
+}
+
+.hand p {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
+thead tr th {
+  width: 1177px;
+  height: 22px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.nota {
+  box-sizing: border-box;
+
+  width: 1177px;
+  height: 48px;
+
+  /* P. White / 1
+  
+  Primary palette
+  */
+  background: #ffffff;
+  /* N. Mid / 4 */
+
+  border: 1px solid #dfe2eb;
+  border-radius: 6px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.subTexto {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #727d94;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+thead {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #a1a8b8;
+}
+
+.valor {
+  flex-basis: 10%;
+  color: #00ad8c;
+}
+
+.dadosCedente {
+  width: 107px;
+  height: 16px;
+
+  /* p12 - Bold 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* N. Dark / 4 */
+
+  color: #727d94;
 }
