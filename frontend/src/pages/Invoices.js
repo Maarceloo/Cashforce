@@ -42,7 +42,9 @@ function Invoices() {
             <p>Notas fiscais</p>
           </div>
           <br />
-          <span className="subTexto">Visualize as notas fiscais que você tem.</span>
+          <span className="subTexto">
+            Visualize as notas fiscais que você tem.
+          </span>
         </div>
         <div className="table">
           <table>

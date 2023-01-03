@@ -103,7 +103,7 @@ img {
   flex-wrap: nowrap;
 }
 
-.hand img{
+.hand img {
   width: 20%;
 }
 
@@ -157,6 +157,8 @@ thead {
   color: #a1a8b8;
 }
 
+
+
 .valor {
   flex-basis: 10%;
   color: #00ad8c;
@@ -181,4 +183,29 @@ thead {
   /* N. Dark / 4 */
 
   color: #727d94;
+}
+
+td {
+  box-sizing: border-box;
+
+  width: 1177px;
+  height: 48px;
+
+  /* P. White / 1
+
+Primary palette
+*/
+  background: #ffffff;
+  /* N. Mid / 4 */
+
+  border-top: 1px solid #dfe2eb;
+  border-bottom: 1px solid #dfe2eb;
+
+  /* border-radius: 6px; */
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
