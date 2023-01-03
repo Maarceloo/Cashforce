@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { getData } from "../services/request";
 import CashForce from "../images/CashForce.png";
 import "../css/invoices.css";
+import handsgreen from "../images/handsgreen.svg";
 import hands from "../images/hands.svg";
+
 import { changeValue, orderStatus } from "../utils/functions";
 
 function Invoices() {
@@ -26,7 +28,7 @@ function Invoices() {
           <img src={CashForce} alt="logo cashforce" />
           <ul className="siderbar-fornecedor">
             <li>
-              <img src={hands} alt="Hand SVG" />
+              <img src={handsgreen} alt="Hand SVG" />
               Notas Fiscais
             </li>
           </ul>
@@ -40,7 +42,7 @@ function Invoices() {
             <p>Notas fiscais</p>
           </div>
           <br />
-          <p className="subTexto">Visualize as notas fiscais que você tem.</p>
+          <span className="subTexto">Visualize as notas fiscais que você tem.</span>
         </div>
         <div className="table">
           <table>

@@ -22,6 +22,7 @@
 
 .siderbar-financiador {
   flex-direction: row;
+  width: 100px;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
@@ -36,7 +37,7 @@
   list-style-type: none;
 }
 
-li {
+.siderbar-fornecedor li {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -46,6 +47,13 @@ li {
   display: flex;
   align-items: center;
   gap: 10px;
+  border-left: 4px solid #00ad8c;
+}
+
+.siderbar-fornecedor li img {
+  color: #00ad8c;
+  margin-left: 8%;
+  width: 10%;
 }
 
 img {
@@ -60,9 +68,29 @@ img {
   padding: 40px 0px 0px 43px;
 }
 
-/* .introducaoConteudo p {
-  background-color: black;
-} */
+.introducaoConteudo p {
+  width: 149px;
+  height: 28px;
+
+  /* H3- Bold 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  /* P. Dark Blue / 5 */
+
+  color: #021b51;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 
 .hand {
   display: flex;
@@ -73,6 +101,10 @@ img {
   justify-content: center;
   gap: 9px;
   flex-wrap: nowrap;
+}
+
+.hand img{
+  width: 20%;
 }
 
 .table {
