@@ -68,9 +68,10 @@ Execute o frontend:
 npm start
 ```
 
-Clique aqui para visualizar a aplicação:
+Com a aplicacao rodando clique aqui para visualizar:
 
-- [Cashforce](http://localhost:3000/)
+- [Cashforce - Frontend](http://localhost:3000/) 
+- [Cashforce - Backend](http://localhost:3001/invoices) 
 
 ---
 
