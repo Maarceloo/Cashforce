@@ -103,29 +103,6 @@ thead tr th {
   flex-grow: 0;
 }
 
-.nota {
-  box-sizing: border-box;
-
-  width: 1177px;
-  height: 48px;
-
-  /* P. White / 1
-  
-  Primary palette
-  */
-  background: #ffffff;
-  /* N. Mid / 4 */
-
-  border: 1px solid #dfe2eb;
-  border-radius: 6px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
 .subTexto {
   font-family: DM Sans;
   font-style: normal;

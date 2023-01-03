@@ -56,7 +56,7 @@ function Invoices() {
             </thead>
             <tbody>
               {notas.map((item) => (
-                <tr className="nota" key={item.id}>
+                <tr key={item.id}>
                   <td>{item.orderNumber}</td>
                   <td>{item.buyers.name}</td>
                   <td>{item.providers.name}</td>
