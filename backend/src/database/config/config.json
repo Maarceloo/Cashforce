@@ -3,7 +3,7 @@
     "username": "root",
     "password": "password",
     "database": "cashforce_v3",
-    "host": "localhost",
+    "host": "db",
     "port": 3306,
     "dialect": "mysql"
   },
@@ -11,7 +11,7 @@
     "username": "root",
     "password": "password",
     "database": "cashforce_v3",
-    "host": "localhost",
+    "host": "db",
     "port": 3306,
     "dialect": "mysql"
   },
@@ -19,7 +19,7 @@
     "username": "root",
     "password": "password",
     "database": "cashforce_v3",
-    "host": "localhost",
+    "host": "db",
     "port": 3306,
     "dialect": "mysql"
   }

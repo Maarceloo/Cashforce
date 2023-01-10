@@ -1,0 +1,21 @@
+{
+  "name": "cashforce",
+  "version": "1.0.0",
+  "description": "O Desafio é desenvolver uma tela de notas fiscais que consome informacoes de um banco de dados Mysql.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend/ && npm i && cd ../frontend/ && npm install",
+    "compose": "docker-compose up --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maarceloo/Cashforce.git"
+  },
+  "author": "Marcelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maarceloo/Cashforce/issues"
+  },
+  "homepage": "https://github.com/Maarceloo/Cashforce#readme"
+}

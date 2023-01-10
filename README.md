@@ -32,46 +32,27 @@ Clone o repositorio:
 git clone https://github.com/Maarceloo/Cashforce
 ```
 
-Acesse `Cashforce/backend` e instale as dependencias:
+Acesse `Cashforce`:
 
 ```
-cd Cashforce/backend/ && npm install
+cd Cashforce
 ```
 
-Suba o container Mysql:
-
-```
-docker-compose up -d
-```
-
-Suba o banco de dados:
-
-```
-npm run db:up
-```
-
-Rode o `backend`:
-
-```
-npm run dev
-```
-
-Acesse o `Cashforce/frontend` e instale as dependencias:
-
-```
-cd Cashforce/frontend/ && npm install
-```
-
-Execute o frontend:
+Acesse instale as dependencias:
 
 ```
 npm start
 ```
 
-Com a aplicacao rodando clique aqui para visualizar:
+Suba os containers com compose:
 
-- [Cashforce - Frontend](http://localhost:3000/) 
-- [Cashforce - Backend](http://localhost:3001/invoices) 
+```
+npm run compose
+```
+
+Clique aqui para visualizar a aplicação:
+
+- [Cashforce](http://localhost:3000/)
 
 ---
 
